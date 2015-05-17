@@ -1,5 +1,5 @@
 # TV-Show-Manager
-TV Show Manager is the Android mobile application project.
+TV Show Reminders is the Android mobile application project.
 
 Appcompat 7 is a Android library. TV Show Manager needs to be linked up to this Android project once its imported as a separate project.
 
