@@ -19,13 +19,13 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="TV SHOW MANAGER"
         android:textColor="#FFFFFF"
-        android:textSize="20dp" />
+        android:textSize="80sp" />
 
     <Button
         android:id="@+id/btnMyShows"
