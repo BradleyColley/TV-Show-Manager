@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.tvshow_reminders"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+     
+        <activity
+            android:name="com.project.tv_manager.MenuScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           </activity>
+        
+         <activity
+            android:name="com.project.tv_manager.MyTVShows"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="my_shows" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+        
+          <activity
+            android:name="com.project.tv_manager.ListOfShows"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="list_of_shows" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+                   
+          <activity
+            android:name="com.project.tv_manager.list_screens.TVLists"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="view_all" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           
+          <activity
+            android:name="com.project.tv_manager.list_screens.EpisodeList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="view_ep" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           
+          <activity
+            android:name="com.project.tv_manager.list_screens.SeasonList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="view_seasons" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+                   
+          <activity
+            android:name="com.project.tv_manager.Reminders"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="view_reminder" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           
+          <activity
+            android:name="com.project.tv_manager.AddReminder"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="add_reminder" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           
+          <activity
+            android:name="com.project.tv_manager.Calendar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="view_calendar" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+  
+          <service android:name="com.project.tv_manager.NotificationService"></service>
+          <activity android:name="com.project.tv_manager.CurrentReminder"></activity> 
+      
+    </application>
+</manifest>

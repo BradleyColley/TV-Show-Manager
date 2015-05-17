@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/bottomBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#202121"
+        android:minHeight="?attr/actionBarSize" >
+        
+    <Button
+        android:id="@+id/nav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#202121"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:text="|||" />
+       
+    <TextView
+        android:id="@+id/txt_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:text="Example"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/reminders"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="16dp"
+        android:background="#202121"
+        android:text="R"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>

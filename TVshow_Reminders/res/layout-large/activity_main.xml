@@ -1,0 +1,77 @@
+<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/drawer_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000000">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <include
+     	android:id="@+id/toolbar_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TV SHOW MANAGER"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnMyShows"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:text="My TV Shows"
+        android:textColor="#8f8d8d"
+        android:background="@drawable/button"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/btnMyShows"
+        android:text="List of Shows"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:textColor="#8f8d8d"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/btnList"
+        android:text="Calendar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:textColor="#8f8d8d"
+        android:textAllCaps="false" />
+    
+    <ListView
+     	android:id="@android:id/list"
+     	android:divider="#202121"
+  	 	android:dividerHeight="1sp"
+     	android:layout_width="fill_parent"
+     	android:layout_height="match_parent"/>
+</LinearLayout>
+	 <ListView
+		android:id="@+id/navList"
+		android:layout_width="300dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		android:divider="#202121"
+		android:dividerHeight="2sp"
+		android:background="#000000"/>
+</android.support.v4.widget.DrawerLayout>
