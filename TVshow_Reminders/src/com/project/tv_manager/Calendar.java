@@ -147,7 +147,7 @@ public class Calendar extends Activity {
 		//Retrieves data in all columns within update_reminder table apart from retrieving a row 
 		//containing the word "ADD REMINDER".
 		Cursor c = tvShow_DB.rawQuery("SELECT * FROM update_reminder WHERE name_of_show NOT LIKE "
-										+ "'%ADD REMINDER%' ORDER BY " + DATE, null);
+										+ "'%ADD REMINDER%' ORDER BY " + DATE +" DESC", null);
 		return c;
 	}	
 }
