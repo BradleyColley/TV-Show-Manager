@@ -413,7 +413,7 @@ public class EpisodeList extends Activity {
 			}
 		} else if(tvStatus == 10) {
 			if(nameStatus == 0) {
-				getName = "Jutified";
+				getName = "Justified";
 				if(seasonStatus == 0) {
 					title = getName + " - Season 1";
 					name = getName + " - S1";
@@ -938,7 +938,7 @@ public class EpisodeList extends Activity {
 				}
 			}
 			else if(nameStatus == 24) {
-				getName = "Jutified";
+				getName = "Justified";
 				if(seasonStatus == 0) {
 					title = getName + " - Season 1";
 					name = getName + " - S1";
